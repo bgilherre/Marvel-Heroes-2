@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class HeaderAPI: NSObject, Codable{
+    var code: Int = 0
+    var status: String = ""
+    var copyright: String = ""
+    var attributionText: String = ""
+    var attributionHTML: String = ""
+    var etag: String = ""
+    var data: APIData = APIData()
+}

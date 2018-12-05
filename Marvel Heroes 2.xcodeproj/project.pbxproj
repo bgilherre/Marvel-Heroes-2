@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC52519021B83524007E762B /* APICharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52518F21B83524007E762B /* APICharacter.swift */; };
+		FC52519221B8357C007E762B /* APIComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52519121B8357C007E762B /* APIComics.swift */; };
+		FC52519421B8358F007E762B /* APISeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52519321B8358F007E762B /* APISeries.swift */; };
+		FC52519621B83633007E762B /* APIStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52519521B83633007E762B /* APIStories.swift */; };
+		FC52519821B83642007E762B /* APIEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52519721B83642007E762B /* APIEvents.swift */; };
+		FC52519A21B836C6007E762B /* APIImagenCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52519921B836C6007E762B /* APIImagenCharacter.swift */; };
+		FC52519C21B836D4007E762B /* APIUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52519B21B836D4007E762B /* APIUrl.swift */; };
 		FC89966121B712D000A07A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89966021B712D000A07A97 /* AppDelegate.swift */; };
 		FC89966321B712D000A07A97 /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89966221B712D000A07A97 /* HeroesTableViewController.swift */; };
 		FC89966621B712D000A07A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC89966421B712D000A07A97 /* Main.storyboard */; };
@@ -36,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC52518F21B83524007E762B /* APICharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICharacter.swift; sourceTree = "<group>"; };
+		FC52519121B8357C007E762B /* APIComics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIComics.swift; sourceTree = "<group>"; };
+		FC52519321B8358F007E762B /* APISeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISeries.swift; sourceTree = "<group>"; };
+		FC52519521B83633007E762B /* APIStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStories.swift; sourceTree = "<group>"; };
+		FC52519721B83642007E762B /* APIEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEvents.swift; sourceTree = "<group>"; };
+		FC52519921B836C6007E762B /* APIImagenCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImagenCharacter.swift; sourceTree = "<group>"; };
+		FC52519B21B836D4007E762B /* APIUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrl.swift; sourceTree = "<group>"; };
 		FC89965D21B712D000A07A97 /* Marvel Heroes 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Heroes 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC89966021B712D000A07A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC89966221B712D000A07A97 /* HeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +165,13 @@
 			children = (
 				FC89969121B719BB00A07A97 /* APIHeader.swift */,
 				FC89969321B72E0000A07A97 /* APIData.swift */,
+				FC52518F21B83524007E762B /* APICharacter.swift */,
+				FC52519121B8357C007E762B /* APIComics.swift */,
+				FC52519321B8358F007E762B /* APISeries.swift */,
+				FC52519521B83633007E762B /* APIStories.swift */,
+				FC52519721B83642007E762B /* APIEvents.swift */,
+				FC52519921B836C6007E762B /* APIImagenCharacter.swift */,
+				FC52519B21B836D4007E762B /* APIUrl.swift */,
 			);
 			path = APIModel;
 			sourceTree = "<group>";
@@ -287,9 +308,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC89969421B72E0000A07A97 /* APIData.swift in Sources */,
+				FC52519C21B836D4007E762B /* APIUrl.swift in Sources */,
 				FC89969221B719BB00A07A97 /* APIHeader.swift in Sources */,
 				FC89966321B712D000A07A97 /* HeroesTableViewController.swift in Sources */,
+				FC52519A21B836C6007E762B /* APIImagenCharacter.swift in Sources */,
 				FC89966121B712D000A07A97 /* AppDelegate.swift in Sources */,
+				FC52519221B8357C007E762B /* APIComics.swift in Sources */,
+				FC52519021B83524007E762B /* APICharacter.swift in Sources */,
+				FC52519821B83642007E762B /* APIEvents.swift in Sources */,
+				FC52519621B83633007E762B /* APIStories.swift in Sources */,
+				FC52519421B8358F007E762B /* APISeries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
