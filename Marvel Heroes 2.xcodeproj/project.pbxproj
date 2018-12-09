@@ -15,7 +15,7 @@
 		FC52519A21B836C6007E762B /* APIImagenCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52519921B836C6007E762B /* APIImagenCharacter.swift */; };
 		FC52519C21B836D4007E762B /* APIUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC52519B21B836D4007E762B /* APIUrl.swift */; };
 		FC89966121B712D000A07A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89966021B712D000A07A97 /* AppDelegate.swift */; };
-		FC89966321B712D000A07A97 /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89966221B712D000A07A97 /* HeroesTableViewController.swift */; };
+		FC89966321B712D000A07A97 /* HeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89966221B712D000A07A97 /* HeroesViewController.swift */; };
 		FC89966621B712D000A07A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC89966421B712D000A07A97 /* Main.storyboard */; };
 		FC89966821B712F700A07A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC89966721B712F700A07A97 /* Assets.xcassets */; };
 		FC89966B21B712F700A07A97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC89966921B712F700A07A97 /* LaunchScreen.storyboard */; };
@@ -23,6 +23,11 @@
 		FC89968121B712F900A07A97 /* Marvel_Heroes_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89968021B712F900A07A97 /* Marvel_Heroes_2UITests.swift */; };
 		FC89969221B719BB00A07A97 /* APIHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89969121B719BB00A07A97 /* APIHeader.swift */; };
 		FC89969421B72E0000A07A97 /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89969321B72E0000A07A97 /* APIData.swift */; };
+		FC89969721B86E3800A07A97 /* MarvelRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89969621B86E3800A07A97 /* MarvelRed.swift */; };
+		FC89969A21B950E800A07A97 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89969921B950E800A07A97 /* StringExtension.swift */; };
+		FC89969C21B9924400A07A97 /* HeroeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89969B21B9924300A07A97 /* HeroeTableViewCell.swift */; };
+		FC89969E21B9929300A07A97 /* HeroeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC89969D21B9929300A07A97 /* HeroeViewController.swift */; };
+		FC8996A221BC5B9700A07A97 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8996A121BC5B9600A07A97 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +57,7 @@
 		FC52519B21B836D4007E762B /* APIUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrl.swift; sourceTree = "<group>"; };
 		FC89965D21B712D000A07A97 /* Marvel Heroes 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Heroes 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC89966021B712D000A07A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC89966221B712D000A07A97 /* HeroesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
+		FC89966221B712D000A07A97 /* HeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewController.swift; sourceTree = "<group>"; };
 		FC89966521B712D000A07A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC89966721B712F700A07A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC89966A21B712F700A07A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +70,11 @@
 		FC89968221B712F900A07A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC89969121B719BB00A07A97 /* APIHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeader.swift; sourceTree = "<group>"; };
 		FC89969321B72E0000A07A97 /* APIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIData.swift; sourceTree = "<group>"; };
+		FC89969621B86E3800A07A97 /* MarvelRed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelRed.swift; sourceTree = "<group>"; };
+		FC89969921B950E800A07A97 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FC89969B21B9924300A07A97 /* HeroeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeTableViewCell.swift; sourceTree = "<group>"; };
+		FC89969D21B9929300A07A97 /* HeroeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeViewController.swift; sourceTree = "<group>"; };
+		FC8996A121BC5B9600A07A97 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,8 @@
 		FC89965F21B712D000A07A97 /* Marvel Heroes 2 */ = {
 			isa = PBXGroup;
 			children = (
+				FC89969821B950A000A07A97 /* UtilString */,
+				FC89969521B86E1800A07A97 /* Red */,
 				FC89969021B7198A00A07A97 /* APIModel */,
 				FC89968F21B7183800A07A97 /* View */,
 				FC89968E21B7182900A07A97 /* ViewController */,
@@ -146,7 +158,9 @@
 		FC89968E21B7182900A07A97 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FC89966221B712D000A07A97 /* HeroesTableViewController.swift */,
+				FC89969D21B9929300A07A97 /* HeroeViewController.swift */,
+				FC89969B21B9924300A07A97 /* HeroeTableViewCell.swift */,
+				FC89966221B712D000A07A97 /* HeroesViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -174,6 +188,23 @@
 				FC52519B21B836D4007E762B /* APIUrl.swift */,
 			);
 			path = APIModel;
+			sourceTree = "<group>";
+		};
+		FC89969521B86E1800A07A97 /* Red */ = {
+			isa = PBXGroup;
+			children = (
+				FC89969621B86E3800A07A97 /* MarvelRed.swift */,
+				FC8996A121BC5B9600A07A97 /* Session.swift */,
+			);
+			path = Red;
+			sourceTree = "<group>";
+		};
+		FC89969821B950A000A07A97 /* UtilString */ = {
+			isa = PBXGroup;
+			children = (
+				FC89969921B950E800A07A97 /* StringExtension.swift */,
+			);
+			path = UtilString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,16 +338,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC89969E21B9929300A07A97 /* HeroeViewController.swift in Sources */,
+				FC89969721B86E3800A07A97 /* MarvelRed.swift in Sources */,
 				FC89969421B72E0000A07A97 /* APIData.swift in Sources */,
 				FC52519C21B836D4007E762B /* APIUrl.swift in Sources */,
 				FC89969221B719BB00A07A97 /* APIHeader.swift in Sources */,
-				FC89966321B712D000A07A97 /* HeroesTableViewController.swift in Sources */,
+				FC89966321B712D000A07A97 /* HeroesViewController.swift in Sources */,
+				FC89969C21B9924400A07A97 /* HeroeTableViewCell.swift in Sources */,
 				FC52519A21B836C6007E762B /* APIImagenCharacter.swift in Sources */,
 				FC89966121B712D000A07A97 /* AppDelegate.swift in Sources */,
 				FC52519221B8357C007E762B /* APIComics.swift in Sources */,
 				FC52519021B83524007E762B /* APICharacter.swift in Sources */,
 				FC52519821B83642007E762B /* APIEvents.swift in Sources */,
+				FC8996A221BC5B9700A07A97 /* Session.swift in Sources */,
 				FC52519621B83633007E762B /* APIStories.swift in Sources */,
+				FC89969A21B950E800A07A97 /* StringExtension.swift in Sources */,
 				FC52519421B8358F007E762B /* APISeries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

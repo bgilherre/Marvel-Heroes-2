@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HeaderAPI: NSObject, Codable{
+class APIHeader: NSObject, Codable{
     var code: Int = 0
     var status: String = ""
     var copyright: String = ""
