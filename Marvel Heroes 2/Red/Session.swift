@@ -22,7 +22,7 @@ class Session: NSObject{
         let hash = "\(ts)\(PRIVKEY)\(APIKEY)".md5()!
         
         
-        let urlFinal: String = "https://gateway.marvel.com/v1/public/" + endPoint + "?ts=" + ts + "&apikey="  + APIKEY + "&hash=" + hash + "&limit=50"
+        let urlFinal: String = "https://gateway.marvel.com/v1/public/" + endPoint + "?ts=" + ts + "&apikey="  + APIKEY + "&hash=" + hash + "&limit=100"
         
         request = NSMutableURLRequest(url: URL(string: urlFinal)!)
         

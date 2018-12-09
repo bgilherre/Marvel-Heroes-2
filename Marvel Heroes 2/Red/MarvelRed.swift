@@ -11,7 +11,7 @@ import Foundation
 class MarvelRed: NSObject{
 
     
-    class func callAPI(endPoint: String, completion: @escaping (([APICharacter]) -> Void)){
+    class func callAPI(endPoint: String, completion: @escaping ((APIHeader) -> Void)){
         
         var request: NSMutableURLRequest = NSMutableURLRequest()
         var session: URLSession = URLSession()
@@ -30,9 +30,9 @@ class MarvelRed: NSObject{
 
                 if let headerAPI = try? JSONDecoder().decode(APIHeader.self, from: jsonData){
                     
-                    completion(headerAPI.data.results)
+                    completion(headerAPI)
                 
-                    print(headerAPI.code)
+                    //print(headerAPI.code)
                     
                 }else{
                     print("error")

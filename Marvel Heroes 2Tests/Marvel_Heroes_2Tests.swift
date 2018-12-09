@@ -23,6 +23,30 @@ class Marvel_Heroes_2Tests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testRed(){
+        
+        var header: APIHeader = APIHeader()
+        
+        MarvelRed.callAPI(endPoint: "characters", completion: {data in
+            header = data
+
+            XCTAssertEqual(header.code, 200, "Error in call")
+            
+        })
+    }
+    
+    func testData(){
+        var characters: [APICharacter] = [APICharacter]()
+        DataCall.giveCharacters(completion: {data in
+         characters = data
+
+            XCTAssertEqual(characters[0].name, "Deadpool", "Error Character name")
+            
+        })
+    }
+    
+    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

@@ -32,16 +32,16 @@ class HeroesViewController: UIViewController {
 
     @objc func refresh(sender:AnyObject) {
         print("OK")
-        MarvelRed.callAPI(endPoint: "characters", completion: {array in
-            self.heroes = array
-            print("entro")
-            DispatchQueue.main.async {                
-            
+        
+        DataCall.giveCharacters(completion: {
+            results in
+            self.heroes = results
+            DispatchQueue.main.async {
+
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
-                
+
             }
-            
         })
         
     }
