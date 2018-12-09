@@ -96,15 +96,11 @@
                                 <rect key="frame" x="16" y="81" width="343" height="245"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="245" id="GwI-ET-hSo"/>
-                                    <constraint firstAttribute="width" constant="343" id="ZOQ-9T-wCb"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descripción no encontrada" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vnD-ho-hRQ">
-                                <rect key="frame" x="16" y="334" width="343" height="208"/>
+                                <rect key="frame" x="16" y="334" width="343" height="313"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="208" id="rLG-GV-rwp"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -117,7 +113,7 @@
                             <constraint firstItem="Wj0-dr-UAF" firstAttribute="trailing" secondItem="vnD-ho-hRQ" secondAttribute="trailing" id="WI3-SD-dzd"/>
                             <constraint firstItem="Wj0-dr-UAF" firstAttribute="trailing" secondItem="btj-sE-kpL" secondAttribute="trailingMargin" id="gnV-ue-mhF"/>
                             <constraint firstItem="Wj0-dr-UAF" firstAttribute="leading" secondItem="vnD-ho-hRQ" secondAttribute="leading" id="qzi-3T-V7h"/>
-                            <constraint firstItem="s3P-J4-YW2" firstAttribute="bottom" secondItem="vnD-ho-hRQ" secondAttribute="bottom" constant="125" id="yWl-zJ-DL9"/>
+                            <constraint firstItem="s3P-J4-YW2" firstAttribute="bottom" secondItem="vnD-ho-hRQ" secondAttribute="bottom" constant="20" id="yWl-zJ-DL9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="s3P-J4-YW2"/>
                     </view>

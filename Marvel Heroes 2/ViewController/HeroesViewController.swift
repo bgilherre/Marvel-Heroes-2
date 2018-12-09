@@ -31,7 +31,6 @@ class HeroesViewController: UIViewController {
     }
 
     @objc func refresh(sender:AnyObject) {
-        print("OK")
         
         DataCall.giveCharacters(completion: {
             results in
