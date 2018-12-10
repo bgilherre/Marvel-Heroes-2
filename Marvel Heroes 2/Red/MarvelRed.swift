@@ -22,24 +22,26 @@ class MarvelRed: NSObject{
         
         let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
 
-            let result = NSString(data: data!, encoding: String.Encoding.ascii.rawValue)!
-            let cadData:String = (result as String)
-            
-            if let jsonData = cadData.data(using: .utf8)
-            {
 
-                if let headerAPI = try? JSONDecoder().decode(APIHeader.self, from: jsonData){
+            if error == nil || error.debugDescription == ""{
+                let result = NSString(data: data!, encoding: String.Encoding.ascii.rawValue)!
+                let cadData:String = (result as String)
+                if let jsonData = cadData.data(using: .utf8)
+                {
+
+                    if let headerAPI = try? JSONDecoder().decode(APIHeader.self, from: jsonData){
+                        
+                        completion(headerAPI)
                     
-                    completion(headerAPI)
-                
-                    //print(headerAPI.code)
-                    
+                        //print(headerAPI.code)
+                        
+                    }else{
+                        print("error")
+                    }
                 }else{
-                    print("error")
+                    print(error)
+                    //  completion(nil)
                 }
-            }else{
-                print(error)
-                //  completion(nil)
             }
 
         })

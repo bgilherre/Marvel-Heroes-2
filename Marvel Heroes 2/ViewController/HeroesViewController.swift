@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 protocol HeroeDelegate: class{
     func sendHeroe(newHeroe: APICharacter)
 }
