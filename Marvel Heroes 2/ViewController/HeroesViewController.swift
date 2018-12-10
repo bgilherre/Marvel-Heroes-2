@@ -70,18 +70,27 @@ extension HeroesViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "HeroeCell", for: indexPath as IndexPath) as? HeroeTableViewCell{
             
             let heroe = heroes[indexPath.row]
+
             cell.nombreLabel.text = heroe.name
-            
+            cell.fotoImageView.image = nil
             let ruta: String = heroe.thumbnail.path + "." + heroe.thumbnail.extensionString
             
             let url:NSURL = NSURL(string: ruta)!
-            do{
-                let data:NSData = try NSData(contentsOf: url as URL)
+            
+                DispatchQueue.global().async {
+                    do{
                 
-                cell.fotoImageView.image = UIImage(data: data as Data)
-            }catch{
-                cell.fotoImageView.image = nil
-            }
+                        let data:NSData = try NSData(contentsOf: url as URL)
+                        DispatchQueue.main.async {
+                            
+                            cell.fotoImageView.image = UIImage(data: data as Data)
+                        }
+                    }catch{
+                        cell.fotoImageView.image = nil
+                    }
+  
+                }
+
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "HeroeCell", for: indexPath as IndexPath)
